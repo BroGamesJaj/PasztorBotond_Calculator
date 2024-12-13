@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="hu.petrik.calculator.CalculatorController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <HBox prefHeight="46.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="input1" maxWidth="100.0" minWidth="50.0">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+            <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+         </TextField>
+         <TextField fx:id="input2" maxWidth="100.0">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="67.0" prefWidth="200.0">
+      <children>
+          <Button id="plusB" minHeight="30.0" minWidth="30.0" onAction="#onOperationClick" prefHeight="30.0" prefWidth="30.0" text="+">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button id="minusB" minHeight="30.0" minWidth="30.0" onAction="#onOperationClick" prefHeight="30.0" prefWidth="30.0" text="-">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button id="multB" minHeight="30.0" minWidth="30.0" onAction="#onOperationClick" prefHeight="30.0" prefWidth="30.0" text="*">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button id="divB" minHeight="30.0" minWidth="30.0" onAction="#onOperationClick" prefHeight="30.0" prefWidth="30.0" text="/">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+         <Button fx:id="modB" minHeight="30.0" minWidth="30.0" onAction="#onOperationClick" prefHeight="30.0" prefWidth="30.0" text="\%">
+            <HBox.margin>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </HBox.margin>
+         </Button>
+      </children>
+   </HBox>
+
+    <Label fx:id="resultLabel" text="Eredmény" />
+</VBox>
